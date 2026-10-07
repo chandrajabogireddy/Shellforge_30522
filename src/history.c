@@ -8,8 +8,7 @@
 char history[MAX_HISTORY][MAX_CMD];
 int count = 0;
 
-void add_history(char *cmd)
-{
+void shellforge_add_history(char *cmd){
     if (count < MAX_HISTORY)
     {
         strcpy(history[count], cmd);
